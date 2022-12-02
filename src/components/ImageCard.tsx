@@ -6,18 +6,21 @@ export interface Props {
 }
 
 const cardStyle = {
+  display: 'inline-block',
 	borderRadius: '5px',
 	backgroundColor: 'lightgrey',
 	width: '250px',
 	height: '330px',
 	padding: '0',
+  margin: '2rem',
 };
 
 const cardImageStyle = {
 	display: 'flex',
-  color: 'white',
+	color: 'white',
 	placeContent: 'center',
-  alignItems: 'center',
+	borderRadius: '5px 5px 0 0',
+	alignItems: 'center',
 	backgroundColor: 'black',
 	width: '250px',
 	height: '250px',

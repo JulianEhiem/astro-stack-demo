@@ -1,12 +1,16 @@
 ---
-import ImageCard from "../components/ImageCard";
-import Layout from "../layouts/Layout.astro"
+import ImageCard from '../components/ImageCard';
+import Layout from '../layouts/Layout.astro';
 ---
 
-
 <Layout title="Cats Page">
-    <ImageCard name="Fido" desc="Fido is an excellent dog"/>
-    <div>
-        MEOW! This is the cats page. Welcome!
-    </div>
+	<div
+		class="container w-screen flex justify-center space-x-7 px-auto"
+		style="height: 95vh; padding: 50px"
+	>
+		<ImageCard name="Stacy" desc="Stacy is an excellent cat" />
+		<ImageCard name="Stacy" desc="Stacy is an excellent cat" />
+		<ImageCard name="Stacy" desc="Stacy is an excellent cat" />
+		<ImageCard name="Stacy" desc="Stacy is an excellent cat" />
+	</div>
 </Layout>
