@@ -1,10 +1,17 @@
 ---
+import ImageCard from "../components/ImageCard";
 import Layout from "../layouts/Layout.astro";
 ---
 
 
 <Layout title="Dogs Page">
-    <div>
-    WOOF! This is the dogs page. Welcome! 
-  </div>
+    <div
+		class="container w-screen flex justify-center space-x-7 px-auto"
+		style="height: 95vh; padding: 50px"
+	>
+		<ImageCard name="Fido" desc="Fido is an excellent dog" />
+		<ImageCard name="Ben" desc="Ben is an excellent dog" />
+		<ImageCard name="Jeremy" desc="Jeremy is an excellent dog" />
+		<ImageCard name="Puck" desc="Puck is an excellent dog" />
+	</div>
 </Layout>
