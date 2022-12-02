@@ -1,18 +1,46 @@
 ---
 export interface Props {
-  title: string;
-  link1_title: string;
-  link1_desc: string;
-  link2_title: string;
-  link2_desc: string;
+	title: string;
+	link1_title: string;
+	link1_desc: string;
+	link2_title: string;
+	link2_desc: string;
 }
 
-const { title, link1_title, link2_title, link1_desc, link2_desc } =Astro.props;
-
+const { title, link1_title, link2_title, link1_desc, link2_desc } = Astro.props;
 ---
 
 <div class="flex flex-row">
-  <a href="/" class="basis-1/3"> <h1 >{title}</h1></a>  
-  <a href={link1_desc} class="basis-1/4"> <h3>{link1_title}</h3> </a>
-  <a href={link2_desc} class="basis-1/4"> <h3>{link2_title}</h3> </a>
+	<a href="/" class="basis-1/2">
+		<h1 class="main-title">{title}</h1>
+	</a>
+	<a href={link1_desc} class="w-90 header-links">
+		<h3 class="mx-8">{link1_title}</h3>
+	</a>
+	<a href={link2_desc} class="w-90 header-links px-8">
+		<h3>{link2_title}</h3>
+	</a>
 </div>
+
+<style>
+	div {
+		width: 100vw;
+		background-color: aquamarine;
+	}
+	div > * {
+		display: inline-flex;
+	}
+	.main-title {
+		color: red;
+		font-size: 50px;
+		font-weight: 900;
+		margin-right: 100px;
+	}
+	.header-links {
+		color: rgb(9, 92, 143);
+		font-size: 30px;
+		font-weight: 600;
+		width: 80px;
+		margin: 0 32px;
+	}
+</style>
