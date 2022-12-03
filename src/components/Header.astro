@@ -14,11 +14,11 @@ const { title, link1_title, link2_title, link1_desc, link2_desc } = Astro.props;
 	<a href="/" class="basis-1/2">
 		<h1 class="main-title">{title}</h1>
 	</a>
-	<a href={link1_desc} class="w-90 header-links">
-		<h3 class="mx-8">{link1_title}</h3>
+	<a href={link1_desc} class="flex w-90 header-links">
+		<h3 class="mx-8 place-self-center">{link1_title}</h3>
 	</a>
 	<a href={link2_desc} class="w-90 header-links px-8">
-		<h3>{link2_title}</h3>
+		<h3 class="mx-8 place-self-center">{link2_title}</h3>
 	</a>
 </div>
 

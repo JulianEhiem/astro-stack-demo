@@ -18,7 +18,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-black" style="height: calc(100vh - 75px);">
 		<Header title="Luigi's Pet Store" link1_desc="/cats" link1_title="Cats" link2_desc="/dogs" link2_title="Dogs" />
 		<slot />
 	</body>
