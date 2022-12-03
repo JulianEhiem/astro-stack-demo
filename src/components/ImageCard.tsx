@@ -3,6 +3,8 @@ import React from 'preact/compat';
 export interface Props {
 	name: string;
 	desc: string;
+  url: string;
+  alt: string;
 }
 
 const cardStyle = {
