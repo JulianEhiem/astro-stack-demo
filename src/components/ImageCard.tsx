@@ -32,14 +32,14 @@ const cardContent = {
 	padding: '5px 15px',
 };
 
-export default function ImageCard({ name, desc }: Props) {
+export default function ImageCard({ name, desc, url, alt }: Props) {
 	return (
-		<div className="card" style={cardStyle}>
-			<div className="card-image" style={cardImageStyle}>
-				img
+		<div style={cardStyle}>
+			<div style={cardImageStyle}>
+				<img src={url} alt={alt} className="w-250px" />
 			</div>
 			<div className="card-content" style={cardContent}>
-				<h3 style={{fontSize: '27px', fontWeight: 'bolder'}}>{name}</h3>
+				<h3 style={{ fontSize: '27px', fontWeight: 'bolder' }}>{name}</h3>
 				<p>{desc}</p>
 			</div>
 		</div>
