@@ -10,9 +10,9 @@ export interface Props {
 const { title, link1_title, link2_title, link1_desc, link2_desc } = Astro.props;
 ---
 
-<div class="flex flex-row">
+<div class="flex flex-row bg-orange-200">
 	<a href="/" class="basis-1/2">
-		<h1 class="main-title">{title}</h1>
+		<h1 class="main-title text-gradient">{title}</h1>
 	</a>
 	<a href={link1_desc} class="flex w-90 header-links">
 		<h3 class="mx-8 place-self-center">{link1_title}</h3>
@@ -25,16 +25,22 @@ const { title, link1_title, link2_title, link1_desc, link2_desc } = Astro.props;
 <style>
 	div {
 		width: 100vw;
-		background-color: aquamarine;
+		background-color: rgb(253 215 170);
 	}
 	div > * {
 		display: inline-flex;
 	}
 	.main-title {
-		color: red;
 		font-size: 50px;
 		font-weight: 900;
 		margin-right: 100px;
+	}
+  .text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
 	}
 	.header-links {
 		color: rgb(9, 92, 143);

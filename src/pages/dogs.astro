@@ -1,17 +1,35 @@
 ---
-import ImageCard from "../components/ImageCard";
-import Layout from "../layouts/Layout.astro";
+import ImageCard from '../components/ImageCard';
+import Layout from '../layouts/Layout.astro';
 ---
 
-
 <Layout title="Dogs Page">
-    <div
-		class="container w-screen flex justify-center space-x-7 px-auto"
-		style="height: 95vh; padding: 50px"
-	>
-		<ImageCard name="Fido" desc="Fido is an excellent dog" url="src/assets/dogs/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg" alt="a dog" />
-		<ImageCard name="Ben" desc="Ben is an excellent dog" url="src/assets/dogs/nathalie-ehrnleitner-fM1s2FVTHm0-unsplash.jpg" alt="a dog" />
-		<ImageCard name="Jeremy" desc="Jeremy is an excellent dog" url="src/assets/dogs/seth-doyle-sXU6BeWoZqI-unsplash.jpg" alt="a dog" />
-		<ImageCard name="Puck" desc="Puck is an excellent dog" url="src/assets/dogs/toshi-lySzv_cqxH8-unsplash.jpg" alt="a dog" />
+	<div class="w-screen h-full flex place-content-center bg-rose-300">
+		<div class="flex bg-zinc-800 place-self-center">
+			<ImageCard
+				name="Fido"
+				desc="Fido is an excellent dog"
+				url="src/assets/dogs/karsten-winegeart-NE0XGVKTmcA-unsplash.jpg"
+				alt="a dog"
+			/>
+			<ImageCard
+				name="Ben"
+				desc="Ben is an excellent dog"
+				url="src/assets/dogs/nathalie-ehrnleitner-fM1s2FVTHm0-unsplash.jpg"
+				alt="a dog"
+			/>
+			<ImageCard
+				name="Jeremy"
+				desc="Jeremy is an excellent dog"
+				url="src/assets/dogs/seth-doyle-sXU6BeWoZqI-unsplash.jpg"
+				alt="a dog"
+			/>
+			<ImageCard
+				name="Puck"
+				desc="Puck is an excellent dog"
+				url="src/assets/dogs/toshi-lySzv_cqxH8-unsplash.jpg"
+				alt="a dog"
+			/>
+		</div>
 	</div>
 </Layout>
